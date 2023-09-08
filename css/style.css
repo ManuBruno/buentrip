@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+.contenedor {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+/* Header */
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100000;
+}
+
+.navegacion ul {
+  display: flex;
+  gap: 2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.logo {
+  max-width: 100px;
+  padding-top: 1rem;
+}
+
+.redes {
+  display: flex;
+  gap: 0.7rem;
+  font-size: 1.5rem;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: transparent;
+  transition: 0.6s;
+}
+header .cambio-color ul li a,
+header .cambio-color i {
+  color: #000;
+}
+
+.cambio-color {
+  background-color: #2d3543;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .imagen-principal {
+    height: 100vh;
+  }
+  nav {
+    display: none;
+  }
+}
+/* Imagen fondo */
+
+.imagen-principal {
+  width: 100%;
+  max-height: 100vh;
+  min-height: 70vh;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+/* Main */
+.hero-title {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title h1 {
+  color: white;
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.hero-title p {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: -30px;
+  margin-left: 4px;
+}
+
+.boton-fechas {
+  border: 0;
+  background-color: #666;
+  width: 30%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 6px 3px;
+  font-size: 1.2rem;
+}
+
+/* Shows */
+main {
+  margin-top: 5rem;
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 15px;
+}
+
+.contenedor-shows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.imagen-show {
+  width: 100%;
+  opacity: 0.8;
+}
+.imagen-show:hover {
+  opacity: 1;
+}
+.titulo-show,
+.lugar-show {
+  text-align: center;
+}
+
+/* Nosotros */
+
+.nosotros {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.nosotros img {
+  max-width: 100%;
+  margin: 10px auto;
+}
+.seccion-nosotros {
+  background-image: url(/img/fondo-nosotros.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titulo-nosotros {
+  color: #ebedef;
+}
+
+.parrafo-nosotros {
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  color: #ebedef;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    width: 100%;
+  }
+  .contendor-shows{
+    width: 100%;
+  }
+  .nosotros {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+  .contenedor-shows {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .contenedor {
+    width: 100%;
+  }
+  .parrafo-nosotros {
+    letter-spacing: 0;
+    line-height: 1;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .show {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
