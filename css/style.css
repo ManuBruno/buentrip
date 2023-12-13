@@ -140,6 +140,9 @@ main {
   text-transform: uppercase;
   margin: 15px;
 }
+.titulo-videos {
+  padding: 50px 0 15px 0;
+}
 
 .contenedor-shows {
   display: grid;
@@ -160,6 +163,65 @@ main {
   text-align: center;
 }
 
+/* videos */
+.seccion-videos {
+  background-color: #99999938;
+}
+.titulo-videos {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+}
+
+.item-video {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.descripcion {
+  font-size: 1.5rem;
+}
+
+.video-insta {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contacto */
+.contacto {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto {
+  text-align: center;
+}
+.contacto i {
+  font-size: 2.5rem;
+}
+.contacto p {
+  font-size: 1rem;
+}
+.contacto a {
+  color: #000;
+  font-size: 1.5rem;
+}
+
 /* Nosotros */
 
 .nosotros {
@@ -172,21 +234,10 @@ main {
   max-width: 100%;
   margin: 10px auto;
 }
-.seccion-nosotros {
-  background-image: url(/img/fondo-nosotros.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.titulo-nosotros {
-  color: #ebedef;
-}
 
 .parrafo-nosotros {
   letter-spacing: 0.1rem;
   line-height: 2.5rem;
-  color: #ebedef;
   font-size: 1.2rem;
 }
 
@@ -194,7 +245,7 @@ main {
   .contenedor {
     width: 100%;
   }
-  .contendor-shows{
+  .contendor-shows {
     width: 100%;
   }
   .nosotros {
@@ -218,5 +269,10 @@ main {
   .show {
     margin-bottom: 10px;
     width: 100%;
+  }
+  .hero-title {
+    top: 50%;
+    left: 10%;
+    font-size: 2rem;
   }
 }
